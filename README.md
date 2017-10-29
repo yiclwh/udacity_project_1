@@ -1,24 +1,30 @@
 # udacity_project_1
 
-## Synopsis
+## Introduction
 
-Movie Trailer Website
-
-
-## Motivation
-
-This project is created for Udacity Full-Stack Web Developer Project 1
-
-## Installation
-
-Install Python. This code is developed in Python **2.7.14**
+This project is created for Udacity Full-Stack Web Developer Project 1 - **Movie Trailer Website**
 
 
-## Tests
+## Contents
 
-There is no setup parameters. Run it directly from Python 
+* Porject files
+  * `media.py`
+  * `entertainment_center.py`
 
-## Contributors
+* Template
+  * `fresh_tomatoes.py`
 
-Chenglin Yi
-yiclwh@gmai.com
+
+
+## How To Run The Application
+
+* Using the Terminal:
+
+  * Type `python entertainment_center.py`
+
+* Using the Python IDLE:
+
+  * Select Run from the IDLE menu,
+
+  * Click `Run Module` from the dropdown list
+

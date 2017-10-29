@@ -1,10 +1,15 @@
-import webbrowser, requests, json
+import webbrowser
+import requests
+import json
+
 
 class Movie():
     """ Movie()
     Build a movie instance 
-    and open up web browser to play its movie trailer. It takes an ID to go to api.themoviedb.org to
-    get movie title and storyline and another set of image and video urls to get poster and trailer
+    and open up web browser to play its movie trailer. 
+    It takes an ID to go to api.themoviedb.org to
+    get movie title and storyline, 
+    a set of image and video urls to get poster and trailer
 
     Attributes: 
       title(string)
@@ -23,7 +28,7 @@ class Movie():
     """
     def __init__(self, movie_id, image_url, trailor_url):
         API_KEY = "fce10e9926d00abd4f6318147db734ad"
-        movie_url = "https://api.themoviedb.org/3/movie/%d?api_key=%s"%(movie_id, API_KEY)
+        movie_url = "https://api.themoviedb.org/3/movie/%d?api_key=%s" %(movie_id, API_KEY)  # noqa
         response = requests.get(movie_url)
         if response.ok:
             jdata = json.loads(response.content)
@@ -33,4 +38,4 @@ class Movie():
         self.trailer_youtube_url = trailor_url
 
     def show_trailer(self):
-        webbrowser.open(self.trailer_youtube_url)  
+        webbrowser.open(self.trailer_youtube_url)
